@@ -1,0 +1,71 @@
+.container {
+    max-width: 1100px;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content-title {
+    padding: 1rem;
+}
+
+.bottom-line {
+    margin: 1rem;
+    height: 2px;
+    background: $secondary-color;
+}
+
+.bg-dark {
+    background: #043661;
+}
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        color: #fff;
+        background: $main-color;
+    }
+    &-secondary {
+        @extend %btn-shared;
+        color: #fff;
+        background: $secondary-color;
+    }
+}
+
+.lead {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.py-1 {
+    padding: 0 1.5rem;
+}
+
+.py-2 {
+    padding: 0 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 5rem;
+    background: $main-color;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
